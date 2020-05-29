@@ -194,5 +194,5 @@ export function _callOnClient(method: string, ...args: any[]): void {
  * @param context Properties of the new `Transaction`.
  */
 export function startTransaction(context: TransactionContext): Transaction {
-  return callOnHub('startTransaction', { ...context });
+  return callOnHub('startTransaction', context);
 }
